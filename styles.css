@@ -1,0 +1,148 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    color: #222;
+    margin: 0;
+    padding: 0 0 40px 0;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main, .main-content {
+    width: 100%;
+    max-width: 850px;
+    background: transparent;
+    padding: 0 18px;
+    box-sizing: border-box;
+}
+h4 {
+    color: #1a3c5a;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    font-size: 1.18em;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    text-align-last: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    background: none;
+    border: none;
+    font-family: inherit;
+    text-transform: none;
+    box-shadow: none;
+    display: block;
+}
+h5 {
+    color: #1a3c5a;
+    font-weight: bold;
+    font-family: inherit;
+    background: none;
+    border: none;
+    text-align: left;
+    margin-top: 32px;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    font-size: 1.18em;
+    max-width: 800px;      /* Giống ul, ol */
+    margin-left: 320px;     /* Giống ul, ol */
+    margin-right: auto;
+    text-transform: none;
+    box-shadow: none;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.ten {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #1a3c5a;
+    margin-top: 24px;
+    margin-bottom: 16px;
+    font-style: italic;
+    text-align: center;
+    display: block;
+}
+
+p {
+    margin: 12px 0;
+    max-width: 800px;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-left: 32px;
+    margin-bottom: 16px;
+    max-width: 800px;
+}
+
+ul ul, ol ul, ul ol, ol ol {
+    margin-left: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 18px 0;
+    width: 98%;
+    max-width: 800px;
+    background: #fff;
+    box-shadow: 0 2px 8px #0001;
+}
+
+th, td {
+    border: 1px solid #bcd;
+    padding: 8px 12px;
+    text-align: left;
+}
+
+th {
+    background: #eaf3fa;
+    color: #1a3c5a;
+    font-weight: 600;
+}
+
+tr:nth-child(even) td {
+    background: #f5f8fa;
+}
+
+em {
+    color: #2a5d84;
+    font-style: italic;
+}
+
+strong {
+    color: #1a3c5a;
+}
+
+@media (max-width: 900px) {
+    main, .main-content {
+        max-width: 99vw;
+        padding: 0 2vw;
+    }
+    p, ul, ol, table {
+        max-width: 99vw;
+    }
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 0 0 40px 0;
+        font-size: 1em;
+    }
+    main, .main-content {
+        padding: 0 2vw;
+    }
+    table, th, td {
+        font-size: 0.98em;
+    }
+    .ten, h4, h5 {
+        font-size: 1.1em;
+    }
+}
